@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+    <!-- header section starts  -->
+    <header>
+
+        <a href="index.html" class="logo"><i class="fa-solid fa-graduation-cap"></i>Alumada</a>
+
+        <div id="menu-bar" class="fas fa-bars"></div>
+
+        <nav class="navbar">
+            <a href="aboutus.html">about us</a>
+            <a href="studentid.html">candidates</a>
+            <a href="recruiterid.html">recruiters</a>
+            <a href="adminlogin.html">admin</a>
+            <a href="third.html">contacts</a>
+            <a href="second.html">sign up</a>
+            <a href="content.html">recruited</a>
+        </nav>
+
+        <!-- <button onclick="writeInDB('Avinash Jha','avinashjh@email.com',)"></button> -->
+
+    </header>
+    <!-- header section ends  -->
+
+
+    <input type="checkbox">
+    <label for=""></label>
+
+    <!-- home section starts  -->
+
+    <section class="home" id="home">
+        <div class="content">
+            <h3>Step towards your future Jobs.</h3>
+            <p>A recruitment website for jobs is a digital platform that connects job seekers with potential employers.
+                These types of websites typically include job listings from a variety of industries and companies, as
+                well as search and filter tools to help users find the right job for them. Users can also create
+                profiles, upload resumes and cover letters, and apply for jobs directly on the website. Recruitment
+                website for jobs also provide tools for employers to manage their recruitment process, from posting job
+                listings to reviewing resumes and conducting interviews. Some recruitment websites also offer additional
+                resources such as salary information and career advice to help job seekers in their job search. In the
+                digital age, recruitment websites for jobs have become an efficient and popular way for job seekers to
+                find employment and for employers to find the right candidates for their open positions.</p>
+        </div>
+        <div class="image">
+            <img src="ggrl.png" alt="error">
+        </div>
+    </section>
+
+    <!-- home section ends  -->
+
+    <!-- company section starts  -->
+
+    <div class="main">
+
+        <div class="pic">
+
+            <div class="image">
+                <img src="amazon.jpg">
+            </div>
+            <div class="title">     
+                <h1>Amazon</h1>
+            </div>
+
+        </div>
+    
+
+
+    
+
+        <div class="pic">
+
+            <div class="image">
+                <img src="infosys.png">
+            </div>
+            <div class="title">
+                <h1>Amazon</h1>
+            </div>
+
+        </div>
+    
+
+
+    
+
+        <div class="pic">
+
+            <div class="image">
+                <img src="Razorpay.webp">
+            </div>
+            <div class="title">
+                <h1>Razorpay</h1>
+            </div>
+
+        </div>
+    
+
+
+    
+
+        <div class="pic">
+
+            <div class="image">
+                <img src="tata.png">
+            </div>
+            <div class="title">
+                <h1>Tata</h1>
+            </div>
+
+        </div>
+    
+
+
+    
+
+        <div class="pic">
+
+            <div class="image">
+                <img src="tech mahindra.png">
+            </div>
+            <div class="title">
+                <h1>Tech Mahindra</h1>
+            </div>
+
+        </div>
+        <!--cards -->
+
+    
+
+        <div class="pic">
+
+            <div class="image">
+                <img src="ibm.jpg">
+            </div>
+            <div class="title">
+                <h1>IBM</h1>
+            </div>
+
+        </div>
+    
+
+        <div class="pic">
+
+            <div class="image">
+                <img src="accenture.png">
+            </div>
+            <div class="title">
+                <h1>Accenture</h1>
+            </div>
+
+        </div>
+    
+
+        <div class="pic">
+
+            <div class="image">
+                <img src="capgemini.jpg">
+            </div>
+            <div class="title">
+                <h1>Capgemini</h1>
+            </div>
+
+        </div>
+    
+
+        <div class="pic">
+
+            <div class="image">
+                <img src="HCL.jpg">
+            </div>
+            <div class="title">
+                <h1>HCL</h1>
+            </div>
+
+        </div>
+    
+
+
+
+        <!-- company section ends  -->
+
+
+        <script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-app.js"></script>
+
+        <!-- TODO: Add SDKs for Firebase products that you want to use-->
+        <script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-database.js"></script>
+
+
+        <!-- background end  -->
+
+
+
+
+        <script>
+            // Your web app's Firebase configuration
+            var firebaseConfig = {
+                apiKey: "AIzaSyDHg0VrivE3C9A7jvzRu7lQgudLvcD_Fxk",
+                authDomain: "registration-cf470.firebaseapp.com",
+                databaseURL: "campus-recruitment-7d969-default-rtdb.fireb aseio.com",
+                projectId: "registration-cf470",
+                storageBucket: "registration-cf470.appspot.com",
+                messagingSenderId: "921371494542",
+                appId: "1:921371494542:web:259209b868c843b08ea1df",
+            };
+            // Initialize Firebase
+            let app = firebase.initializeApp(firebaseConfig);
+
+            let db = app.database();
+
+            //async function writeInDB(name,email,imageUrl){
+            /*db.push({
+                 username: 'name',
+                 email: 'email',
+                 profile_picture: 'imageUrl'
+             });*/
+
+            db.get(db.ref('users').child('-NLevPW4swYs8debTVli'));
+        //}
+
+        </script>
+        <script src="script.js"></script>
+
+
+</body>
+
+</html>
